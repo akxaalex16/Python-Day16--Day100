@@ -16,6 +16,5 @@ for _ in range(200):
     bean.setheading(random.choice(directions))
 
 
-
 screen = Screen()
 screen. exitonclick()
