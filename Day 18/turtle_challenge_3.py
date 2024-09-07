@@ -1,5 +1,5 @@
 from turtle import Turtle, Screen
-
+import random
 
 bean = Turtle()
 bean.shape('turtle')
@@ -48,6 +48,9 @@ for _ in range(10):
 
 
 # preferred solution
+colors = ["maroon", "floral white", "violet", "sandy brown", "pale green", "pale turquoise", "light slate gray", "gold"]
+
+
 def draw_shape(num_sides):
     angle = 360 / num_sides
     for _ in range(num_sides):
@@ -56,6 +59,7 @@ def draw_shape(num_sides):
 
 
 for shape_side_n in range(3, 11):
+    bean.color(random.choice(colors))
     draw_shape(shape_side_n)
 
 screen = Screen()
