@@ -4,7 +4,7 @@ from turtle import Turtle, Screen
 bean = Turtle()
 screen = Screen()
 
-
+# etch-a-sketch
 def move_forwards():
     bean.forward(10)
 
@@ -32,7 +32,6 @@ def clear():
     bean.pendown()
 
 
-
 screen.listen()
 screen.onkey(key="w", fun=move_forwards)
 screen.onkey(key="s", fun=move_backwards)
@@ -40,8 +39,6 @@ screen.onkey(key='a', fun=move_cc)
 screen.onkey(key='d', fun=move_c)
 screen.onkey(key='c', fun=clear)
 screen.exitonclick()
-
-
 
 
 # Functions as Inputs
