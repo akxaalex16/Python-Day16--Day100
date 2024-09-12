@@ -4,6 +4,7 @@ from turtle import Turtle, Screen
 bean = Turtle()
 screen = Screen()
 
+
 # etch-a-sketch
 def move_forwards():
     bean.forward(10)
