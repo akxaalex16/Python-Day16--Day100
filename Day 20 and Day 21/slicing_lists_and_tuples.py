@@ -23,3 +23,6 @@ print(piano_keys[::-1])
 piano_tuple = ("do", "re", "mi", "fa", "so", "la", "ti")
 print(piano_tuple[2:5])
 # this gives you ('mi', 'fa', 'so'),
+
+print(piano_tuple[1:])
+# this gives you ('re', 'mi', 'fa', 'so', 'la', 'ti'), everything besides the first one
