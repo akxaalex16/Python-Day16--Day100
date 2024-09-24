@@ -24,12 +24,15 @@ while game_is_on:
     car.create_car()
     car.move_cars()
 
-    #detect collision with car
+    # detect collision with car
     for cars in car.all_cars:
         if cars.distance(turtle) < 20:
             game_is_on = False
-            
 
+    # detect successful crossing
+    if turtle.is_at_finish_line():
+        turtle.go_to_start()
+        car.level_up()
 
 
 screen.exitonclick()
